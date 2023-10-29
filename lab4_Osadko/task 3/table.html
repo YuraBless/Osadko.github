@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Таблиця</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="audioChange.js"></script>
+</head>
+<body>
+    <img src="groupmates/video/066b.gif">
+<a href="file:///D:/Yura_IPZ13_Osadko/front_end_Osadko/lab4_Osadko/lab4.html">Повернутись</a>
+<table>
+    <tr>
+        <th colspan="4">Мої одногрупники</th>
+    </tr>
+    <tr>
+        <td>
+            <a href="groupmates/Denys.html" onclick="changeAudio('groupmates/music/imagine-dragons-bones.mp3', 'groupmates/video/Imagine Dragons - Bones (Official Music Video) (1).mp4')" target="iframe_a">
+            <img src="groupmates/photo/images4.jpg" >
+        </a>
+        Морис Денис Романович
+        </td>
+        <td>
+            <a href="groupmates/Ivan.html" onclick="changeAudio('groupmates/music/Vought_International_-_Soldier_Boy_Guest_Appearance_on_Solid_Gold_76440289.mp3', 'groupmates/video/Soldier Boy _ Guest Appearance on Solid Gold (2).mp4')" target="iframe_a">
+            <img src="groupmates/photo/images5.jpg">
+        </a>
+        Тимчук Іван Васильович
+        </td>
+        <td>
+            <a href="groupmates/Nazar.html" onclick="changeAudio('groupmates/music/Дзідзьо feat. Ван Попович - Василина.mp3', 'groupmates/video/Василина.mp4')" target="iframe_a" class="changeAudio">
+                <img src="groupmates/photo/images6.jpg">
+        </a>
+        Рогів Назар Васильович
+        </td>
+        <td>
+            <a href="groupmates/Oleg.html" onclick="changeAudio('groupmates/music/Гурт VIP - Сама пю сама наливаю.mp3', 'groupmates/video/Lana Del Rey - Summertime Sadness (Official Music Video).mp4')" target="iframe_a">
+            <img src="groupmates/photo/images7.jpg">
+        </a>
+        Ницак Олег Андрійович
+        </td>
+    </tr>
+    <tr>
+        <td colspan="4">
+            <iframe name="iframe_a" src="" class="iframeclass"></iframe>
+        </td>
+    </tr>
+</table>
+<audio id="myAudio" controls>
+    <source src="" type="audio/mpeg">
+</audio>
+<video id="myVideo" controls>
+    <source src="">
+</video>
+</body>
+</html>
