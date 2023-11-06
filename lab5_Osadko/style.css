@@ -1,0 +1,44 @@
+
+body {
+    background-color: white;
+    background-image: url('ramka.gif');
+    background-repeat: repeat-y;
+    background-attachment: fixed; 
+}
+
+#header {
+    text-align: center;
+    font-weight: bold;
+}
+
+#column1, #column2 {
+    position: absolute;
+    width: 600px;
+    height: 160%;
+    padding: 10px;
+    border: 2px double red;
+    background-image: url('bg_menu.gif');
+    background-repeat: repeat-x repeat-y;
+    background-position: center top;
+}
+
+#column1 {
+    left: 70px;
+}
+
+#column2 {
+    left: 720px;
+}
+
+h4 {
+    text-align: center;
+    font-weight: bold;
+}
+
+p {
+    margin: 10px;
+    font-style: italic;
+}
+.link-margin {
+    margin-left: 40px; 
+}
