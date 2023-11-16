@@ -1,0 +1,131 @@
+/* Стилізуємо загальні елементи сторінки */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+/* Стилізуємо заголовок */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    /* Завдання 1: Градієнтний фон */
+    background-image: linear-gradient(to bottom, #333, #555);
+}
+
+header h1 {
+    font-size: 2em;
+}
+
+/* Стилізуємо навігацію */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    /* Завдання 1: Зміна курсору */
+    cursor: pointer;
+    /* Завдання 1: Колір каретки вставки */
+    caret-color: blue;
+    /* Завдання 2: Плавний перехід */
+    transition: color 0.3s, background-color 0.3s;
+}
+
+/* Завдання 3: 2D-трансформація */
+nav:hover {
+    transform: translateX(20px);
+}
+
+/* Стилізуємо розділи і статті */
+section {
+    padding: 20px;
+    /* Завдання 2: Плавний перехід */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: #333;
+    /* Завдання 3: Градієнтний текст */
+    background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    /* Завдання 2: Плавний перехід */
+    transition: color 0.3s;
+}
+
+article {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px 0;
+    /* Завдання 1: Заокруглення кутів */
+    border-radius: 10px;
+    /* Завдання 1: Рамки-зображення */
+    border-image-source: url('myata.html');
+    border-image-slice: 30 fill;
+    border-image-width: 10px;
+    border-image-outset: 5px;
+    border-image-repeat: repeat;
+    /* Завдання 1: Градієнтна рамка */
+    border: 2px solid;
+    border-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    border-image-slice: 1;
+    border-image-repeat: stretch;
+    /* Завдання 1: Зміна розміру блоків */
+    resize: both;
+    overflow: auto;
+    /* Завдання 1: Властивість outline */
+    outline: 2px solid #ddd;
+    /* Завдання 1: Градієнтний фон */
+    background-image: linear-gradient(to bottom, #333, #555);
+    /* Завдання 2: Плавний перехід */
+    transition: outline 0.3s, background-color 0.3s;
+    /* Завдання 3: 2D-трансформація */
+    transform: rotate(5deg);
+}
+
+article h3 {
+    font-size: 1.2em;
+}
+
+article img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Стилізуємо підвал */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.8em;
+    /* Завдання 2: Плавний перехід */
+    transition: background-color 0.3s;
+}
+
+/* Додамо форматування для лапок (якщо потрібно) */
+q::before {
+    content: open-quote;
+}
+
+q::after {
+    content: close-quote;
+}
+
+
+  
+
+
+  
