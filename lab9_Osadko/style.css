@@ -1,0 +1,121 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.block1, .block5 {
+  background-color: #ffcccb;
+  width: 100%;
+  height: 30vh;
+  box-sizing: border-box;
+  overflow-y: auto;
+  padding: 20px;
+  font-size: 18px;
+  text-align: center;
+  position: relative;
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+
+
+.container-middle {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 70vh;
+}
+
+.block2, .block3, .block4 {
+  box-sizing: border-box;
+  width: 30%;
+  height: 70vh;
+  overflow-y: auto;
+  padding: 20px;
+  font-size: 18px;
+  text-align: center;
+  position: relative;
+  width: 30%;
+}
+
+.block2 {
+  background-color: #b0e57c;
+  margin-right: auto;
+}
+
+.block3 {
+  background-color: #a6dcef;
+  transform: rotate(-2deg);
+  margin-left: 470px;
+  margin-top: -470px;
+}
+
+.block4 {
+  background-color: #ffb347;
+  margin-left: auto;
+  margin-top: -457px;
+
+}
+
+.block5 {
+  background-color: #c9c9ff;
+  overflow-y: auto;
+  padding: 20px;
+  font-size: 18px;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .container {
+    align-items: flex-start; /* Зміна властивостей для PC */
+  }
+  .block1, .block5 {
+    height: 40vh; 
+  }
+}
+
+/* Стилі для смартфону */
+@media (max-width: 767px) {
+  .container {
+    align-items: center;
+  }
+  .block1, .block5 {
+    height: 20vh; 
+  }
+}
+
+/* Стилі для друку */
+@media print {
+  body {
+    font-size: 14px; /* Зміна розміру шрифту для друку */
+  }
+  .block1, .block5 {
+    background-color: #fff; 
+  }
+}
+
+li a::before {
+  content: attr(href);
+  display: block;
+  font-style: italic;
+  color: #666;
+}
+
+.block4 {
+  background-color: #ffb347;
+  margin-left: auto;
+  margin-top: calc(15% - 658px);
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@font-face {
+  font-family: 'Open Sans';
+  src: url('https://fonts.gstatic.com/s/opensans/v23/mem8YaGs126MiZpBA-UFVZ0e.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
