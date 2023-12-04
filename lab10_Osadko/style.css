@@ -1,0 +1,60 @@
+section{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.carousel-control-next-icon{
+    background-image: url(right.png);
+}
+.carousel-control-prev-icon{
+    background-image: url(left.png);
+}
+.carousel-control-next, .carousel-control-prev{
+    width: 20px;
+}
+.carousel-control-next, .carousel-control-prev{
+    width: 20px;
+}
+.carousel-control-prev{
+    left: 0 px;
+}
+.carousel-control-next{
+    right: 110px;
+}
+body {
+    background-color: #f8f9fa; 
+    color: #495057;
+}
+
+header {
+    background-color: #964; 
+    padding: 10px 0;
+    color: #fff; 
+}
+
+nav.navbar {
+    background-color: #964;
+}
+
+section {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+h1, h2 {
+    color: #964; 
+}
+
+.card {
+    border: 2px solid #964; 
+    border-radius: 10px;
+}
+
+.btn-outline-success {
+    color: #964; 
+    border-color: #964; 
+}
+
+.btn-outline-success:hover {
+    background-color: #964; 
+    color: #fff; 
+}
