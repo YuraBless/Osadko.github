@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2 Rohiv</title>
+    <style>
+        .styled-element::before {
+            content: "Before content. ";
+            color: green;
+            font-weight: bold;
+        }
+
+        .styled-element::after {
+            content: " After content.";
+            color: blue;
+            font-style: italic;
+        }
+
+        .first-letter-styling::first-letter {
+            font-size: 150%;
+            color: red;
+        }
+
+        .first-line-styling::first-line {
+            font-weight: bold;
+            font-size: 120%;
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+
+    <p class="styled-element">Це абзац із псевдоелементами. Перша літера та перший рядок стилізовані.</p>
+
+    <p class="first-letter-styling">Це ще один приклад абзацу. Перша літера оформлена інакше.</p>
+
+    <p class="first-line-styling">І ось ще один приклад абзацу. Перший рядок оформлений інакше.</p>
+
+    <a href="">На головну</a>
+
+
+</body>
+</html>
+

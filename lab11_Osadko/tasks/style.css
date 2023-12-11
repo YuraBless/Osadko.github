@@ -1,0 +1,80 @@
+/* Стилізуємо загальні елементи сторінки */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+/* Стилізуємо заголовок */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+header h1 {
+    font-size: 2em;
+}
+
+/* Стилізуємо навігацію */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Стилізуємо розділи і статті */
+section {
+    padding: 20px;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+article {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+article h3 {
+    font-size: 1.2em;
+}
+
+article img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Стилізуємо підвал */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.8em;
+}
+
+/* Додамо форматування для лапок (якщо потрібно) */
+q::before {
+    content: open-quote;
+}
+
+q::after {
+    content: close-quote;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes Demo</title>
+    <style>
+        /* Стиль для елементів форми, які пройшли валідацію */
+        input:valid {
+            border: 2px solid green;
+        }
+
+        /* Стиль для елементів форми, які не пройшли валідацію */
+        input:invalid {
+            border: 2px solid red;
+        }
+
+        /* Стиль для вибраних (позначених) елементів форми */
+        input[type="checkbox"]:checked {
+            background-color: #ffff99; /* Жовтий фон для позначених чекбоксів */
+        }
+
+        /* Стиль для елементів форми, які не є чекбоксами */
+        input:not([type="checkbox"]) {
+            margin-bottom: 10px; /* Додатковий відступ для елементів форми, які не є чекбоксами */
+        }
+
+        /* Стиль для елементів форми, які можна читати і змінювати */
+        :read-write {
+            background-color: #e6f7ff; /* Світло-синій фон для читаємих та змінюваних елементів */
+        }
+    </style>
+</head>
+<body>
+
+    <form>
+        <label for="validInput">Valid Input:</label>
+        <input type="text" id="validInput" required><br>
+
+        <label for="invalidInput">Invalid Input:</label>
+        <input type="text" id="invalidInput" pattern="[0-9]+" title="Please enter digits only"><br>
+
+        <input type="checkbox" id="checkbox"> <label for="checkbox">Checkbox</label><br>
+
+        <label for="textArea">Textarea:</label>
+        <textarea id="textArea" readonly>Read-only textarea</textarea><br>
+
+        <label for="textInput">Text Input:</label>
+        <input type="text" id="textInput" readonly value="Read-only text input"><br>
+    </form>
+
+</body>
+</html>
